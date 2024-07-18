@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cash_on_completion']))
     $email = $_POST['email'];
     $unit_number = $_POST['unumber'];
     $street_address = $_POST['saddress'];
+    $phone_number = $_POST['phone_number'];
     $city = $_POST['city'];
     $state = $_POST['state'];
     $zip_code = $_POST['zcode'];
@@ -56,6 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cash_on_completion']))
                         <h1 class="h3">Personal Information</h1>
                         <hr>
                     </div>
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="first_name">First Name</label>
@@ -66,6 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cash_on_completion']))
                             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" pattern="[A-Za-z]+" required>
                         </div>
                     </div>
+                    
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="email">Email</label>
